@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>Bare Leg Run for National Veterans</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body {
+	text-align:center;
+	margin:0 15%;
+	padding:0;
+	font-family: cursive, ariel, serif;
+	font-size:16px;
+	background: #666;
+}
+#header {
+	width: 630px;
+	text-align: left;
+	background: #FFF;
+	padding: 0 15px;
+}
+h1, h2, h3, h4 {
+	font-family: "Lucida Calligraphy", Elephant, cursive, serif;
+	margin: 0 0 10px 0;
+	padding: 0;
+	text-align: center;
+}
+h2, h3, h4 {
+	font-family: cursive, serif;
+}
+#nav {
+	width: 100%;
+	padding-top: 20px;
+	background: #FFF;
+}
+#nav:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#nav img {
+	float: left;
+}
+#nav ul {
+	float: left;
+	margin: 10px 0 0 10px;
+	padding:0;
+}
+#nav ul li {
+	margin:0;
+	padding: 10px 0 0 0;
+	list-style:none;
+}
+#content {
+	width: 630px;
+	clear: both;
+	text-align: left;
+	padding-top: 20px;
+	padding: 20px 15px 0 15px;
+	font-size:0.9em;
+	background: #FFF;
+}
+#content h1, #content h2, #content h3, #content h4 {
+	text-align: left;
+}
+#content h3, #content h4 {
+	margin: 10px 0 0 0;
+}
+p {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+#content ul {
+	margin: 0;
+	padding:0;
+}
+#content ul li {
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+sup {
+	font-size:xx-small;
+	vertical-align:top;
+}
+#blr-logo {
+	border: 1px solid #000;
+	border-width: 1px 2px 2px 1px;
+}
+a {
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#entry, #directions2, #event, #support, #sponsors {
+	display: none;
+}
+#sponsorLogos {
+	margin-top: 15px;
+}
+#sponsorLogos a {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+}
+#sponsorLogos img {
+	border: none;
+}
+.clear {
+	clear: both;
+}
+@media print {
+	body {
+		text-align:left;
+		margin: 0 0;
+		background: #FFF;
+	}
+	img#blr-logo {
+		margin-left: 100px;
+	}
+	ul#linkList {
+		display: none;
+	}
+	#entry, #directions, #event, #support, #sponsors, iframe {
+		display: block;
+	}
+}
+</style>
+<script language="JavaScript" src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#linkList a").each(
+		function (intIndex) {
+			$( this ).bind ("click", 
+				function(){
+					var section = ["entry", "directions", "event", "support", "sponsors"];
+					if (this.id) {
+					for (var x=0,len=section.length; x<len; x++) {
+						$("#" + section[x]).fadeOut("slow");
+					}
+					$("#" + this.id.replace("Link","")).fadeIn("slow");
+					if (this.id == "directionsLink") {
+						$("iframe").show(1, function () {
+							resizeMap();
+        					});
+					}
+					}
+				}
+			);
+		}
+	);
+});
+</script>
+</head>
+<body>
+<div id="header">
+	<h1>Bare Leg Run</h1>
+	<h2>Bare Your Legs For Those Who Beared Arms</h2>
+	<h3>Benefits the 2009 National Veterans Wheelchair Games</h3>
+
+	<div id="nav">
+		<img src="barelegrun.gif" id="blr-logo" alt="Bare Leg Run Inaugural Event - 09/26/2009" />
+		<ul id="linkList">
+			<li><a href="javascript:void(0)" id="entryLink">Entry &amp; Registration Info</a></li>
+			<li><a href="javascript:void(0)" id="directionsLink">Directions</a></li>
+			<li><a href="javascript:void(0)" id="eventLink">Day Of Event</a></li>
+			<li><a href="javascript:void(0)" id="supportLink">Show Your Support</a></li>
+			<li><a href="javascript:void(0)" id="sponsorsLink">Sponsors</a></li>
+			<li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%52%61%63%68%65%6C%2E%54%68%6F%6D%70%73%6F%6E%32%40%76%61%2E%67%6F%76">Contact US</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content">
+	<div id="intro">
+
+		<h3>5K Walk, Run &amp; Roll at the Federal Center</h3>
+		<p>
+			This event will promote and raise funds for the 2010 National Veterans Wheelchair Games. Over 600 wheelchair athletes 
+			from all over the nation, Puerto Rico and Great Britain are expected to come to Denver to compete in various events 
+			such as track, field, hand cycling, air guns and much more.
+		</p>
+	</div>
+
+	<div id="entry">
+		<h3>Entry &amp; Registration Info</h3>
+
+		<h4>Entry Fees:</h4>
+		<ul>
+			<li>$25 per Adults</li>
+			<li>$15 per Child under 12</li>
+			<li>$35 after Sept. 19, 2009</li>
+		</ul>
+	</div>
+
+	<div id="directions">
+		<h3>Directions</h3>
+		<p>
+			Federal Center located at 6<sup>th</sup> and Kipling.
+		</p>
+		<p>
+			The facility is at West Sixth Avenue and Kipling Street. Go south on Kipling 1/2 mile to Gate 1 of the Denver Federal Center. A photo ID (driver's license) is required to enter.
+		</p>
+
+		<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Kipling+St+%26+W+6th+Ave,+Denver,+Jefferson,+Colorado+80225&amp;sll=39.722719,-105.106781&amp;sspn=0.007641,0.013797&amp;ie=UTF8&amp;cd=2&amp;geocode=FV8eXgId_ya8-Q&amp;split=0&amp;ll=39.731944,-105.105515&amp;spn=0.023103,0.052357&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Kipling+St+%26+W+6th+Ave,+Denver,+Jefferson,+Colorado+80225&amp;sll=39.722719,-105.106781&amp;sspn=0.007641,0.013797&amp;ie=UTF8&amp;cd=2&amp;geocode=FV8eXgId_ya8-Q&amp;split=0&amp;ll=39.731944,-105.105515&amp;spn=0.023103,0.052357&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>	
+	</div>
+
+	<div id="event">
+		<h3>Day Of Event</h3>
+		<p>
+			Enter at Gate 1 (on Kipling just North of Alameda) and have a photo ID available.
+		</p>
+
+		<h4>Order of Events:</h4>
+		<ul>
+			<li>9am W/C Competitive</li>
+			<li>9:15 Runners</li>
+			<li>9:30 Rollers</li>
+			<li>9:45 Walkers</li>
+			<li>10:00 1K Fun Run</li>
+		</ul>
+
+		<h4>Prizes</h4>
+		<ul>
+			<li><u>Runners:</u> 1<sup>st</sup> Place Males and Female 0-12, 13-39, 40+</li>
+			<li><u>W/C competitive:</u> Place Males and Female</li>
+			<li><u>Walkers &amp; Non-competitive W/C:</u> Raffle </li>
+		</ul>
+	</div>
+
+	<div id="support">
+		<h3>Show Your Support</h3>
+		<h4>Long-sleave T-shirts:</h4>
+		<ul>
+			<li>$15 Adults or Children</li>
+		</ul>
+	</div>
+
+	<div id="sponsors">
+		<h3>Sponsors</h3>
+		<h4>Become a Sponsor</h4>
+
+		<p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%52%61%63%68%65%6C%2E%54%68%6F%6D%70%73%6F%6E%32%40%76%61%2E%67%6F%76">Email Us</a> to find out how you can become a sponsor.</p>
+		<h4>Current Sponsors</h4>
+		<div id="sponsorLogos">
+			<a href="http://www.facebook.com/pages/Xstatic-Public-Relations/72280067444" target="_top"><img src="logo-xstatic.gif" alt="Xstatic Public Relations" /></a>
+			<a href="http://www.purplecowdesigns.com" target="_top"><img src="logo-pcd.gif" alt="Purple Cow Designs" /></a>
+
+			<br class="clear" />
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
